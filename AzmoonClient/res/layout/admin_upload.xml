@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:focusableInTouchMode="true"
+        android:focusable="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true">
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etQuestion" android:editable="true" android:minHeight="100dp" android:maxLength="150"
+            android:hint="متن سوال ؟"/>
+
+    <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:id="@+id/radioG" android:longClickable="false">
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButtonA" android:layout_gravity="left|center_vertical"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etA" android:layout_gravity="center" android:maxLength="150"
+                    android:hint="گزینه 1"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButtonB" android:layout_gravity="left|center_vertical"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etB" android:layout_gravity="center" android:maxLength="150"
+                    android:hint="گزینه 2"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButtonC" android:layout_gravity="left|center_vertical"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etC" android:layout_gravity="center" android:maxLength="150"
+                    android:hint="گزینه 3"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButtonD" android:layout_gravity="left|center_vertical"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etD" android:layout_gravity="center" android:maxLength="150"
+                    android:hint="گزینه 4"/>
+        </TableRow>
+
+    </RadioGroup>
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ثبت سوال"
+            android:id="@+id/btnUpload" />
+</LinearLayout>
+</ScrollView>

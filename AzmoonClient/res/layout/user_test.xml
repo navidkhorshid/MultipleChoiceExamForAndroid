@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:focusableInTouchMode="true"
+        android:focusable="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true">
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Question"
+                android:id="@+id/textQuesCnt" android:layout_gravity="center"/>
+    </TableRow>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textQ_Text"/>
+    <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:id="@+id/radioG" android:longClickable="false">
+        <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonA"/>
+        <RadioButton android:layout_width="fill_parent" android:layout_height="wrap_content"
+                     android:id="@+id/radioButtonB"/>
+        <RadioButton android:layout_width="fill_parent" android:layout_height="wrap_content"
+                     android:id="@+id/radioButtonC"/>
+        <RadioButton android:layout_width="fill_parent" android:layout_height="wrap_content"
+                     android:id="@+id/radioButtonD"/>
+    </RadioGroup>
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="سوال بعدی"
+            android:id="@+id/btnNext" />
+    <SeekBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/seekBar" android:indeterminate="false" android:indeterminateOnly="false"/>
+</LinearLayout>
+</ScrollView>

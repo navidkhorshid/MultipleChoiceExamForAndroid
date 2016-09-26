@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.navid.AzmoonClient"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:label="آزمون مجازی" android:icon="@drawable/bank" >
+        <activity android:name=".SignIn"
+                  android:label="آزمون"
+                android:theme="@android:style/Animation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUp" android:theme="@android:style/Theme.Light"></activity>
+        <activity android:name=".AdminMain" android:theme="@android:style/Theme.Light"></activity>
+        <activity android:name=".AdminCategory" android:theme="@android:style/Theme.Light"></activity>
+        <activity android:name=".AdminQuestions" android:theme="@android:style/Theme.Light"></activity>
+        <activity android:name=".AdminUpload" android:theme="@android:style/Theme.Light"></activity>
+        <activity android:name=".AdminSearch" android:theme="@android:style/Theme.Light"></activity>
+        <activity android:name=".AdminSearchResult" android:theme="@android:style/Theme.Light"></activity>
+        <activity android:name=".AdminAcceptedUsers" android:theme="@android:style/Theme.Light"></activity>
+        <activity android:name=".UserMain" android:theme="@android:style/Theme.Light"></activity>
+        <activity android:name=".UserEdit" android:theme="@android:style/Theme.Light"></activity>
+        <activity android:name=".UserTest" android:theme="@android:style/Theme.Light"></activity>
+    </application>
+</manifest> 
